@@ -4,11 +4,11 @@
     font-family: 'Roboto Mono', monospace;
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 
 body{
-    background: conic-gradient(from -270deg at 110% 50%, cadetblue, darkgreen) no-repeat;
+    background: conic-gradient(from 90deg at bottom right, cyan, rebeccapurple) no-repeat;
+    overflow: hidden;
 }
 
 .main-container{
@@ -25,13 +25,13 @@ body{
     margin: auto;
     background-color: whitesmoke;
     box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.5);
-    color: darkgreen
+    color: rebeccapurple
 }
 
 .checklist h1{
     font-size: 3rem;
     margin-top: 3px;
-    color: darkgreen;
+    color: rebeccapurple;
     padding-top: 10px;
 }
 
@@ -56,13 +56,44 @@ i:hover{
 }
 
 #items{
-    font-size: 2rem;
-    margin-top: 4px;
+    font-size: 1.5rem;
     color: black;
+    padding: 1px;
+    margin-top: 15px;
 }
 
-#items:hover{
-    background-color: rgba(0, 100, 0, 0.404);
+h2{
+    text-align: start;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+h2:hover{
+    background-color: rgba(102, 51, 153, 0.062);
     border-radius: 4px;
     cursor: pointer;
 }
+
+.devguicordeirofooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 3vh;
+    width: 100%;
+    font-size: 20px;
+    color:rebeccapurple
+  }
+  
+  .fa-github {
+    color: rebeccapurple;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.3);
+  }
